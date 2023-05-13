@@ -259,6 +259,7 @@ void term_putc(char c)
 		termp += termcols - ((termp - termmem) % termcols);
 	} else if (c == '\t') {
 		termp += TAB_LENGTH;
+		termp -= ((termp - termmem) % TAB_LENGTH);
 	} else {
 		termp += sizeof(c);
 	}
