@@ -1,0 +1,7 @@
+* ufbterm
+
+simple terminal on linux framebuffer
+
+* todo
+
+emulate a vt100 term.
